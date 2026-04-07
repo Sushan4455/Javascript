@@ -15,6 +15,9 @@ const playerName = "Sam"; // We use const because the name stays the same
 currentScore = 10;  // Updating the score later in the game
 ```
 
+## 1.  Declaration And Initialization
+
+
 ## 🔗 Comments
 
 In JavaScript, comments are notes you leave in your code for yourself or other humans to read. The computer completely ignores them when running the program. They are incredibly useful for explaining what a complex piece of code does, leaving reminders, or temporarily turning off a piece of code while you are trying to fix a bug.
@@ -37,3 +40,5 @@ If you have a longer explanation or want to disable a large chunk of code, use /
 /* This is a 
 Double line comments */
 ```
+
+
