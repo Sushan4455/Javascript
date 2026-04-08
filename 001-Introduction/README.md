@@ -17,6 +17,27 @@ currentScore = 10;  // Updating the score later in the game
 
 ## 1.  Declaration And Initialization
 
+1. Declaration 
+
+Declaration is the process of registering a variable name within a specific scope (like a function or a block). At this stage, you are telling the JavaScript engine: "I’m going to need a box with this name."
+Syntax: You use keywords like var, let, or const.
+The "Undefined" State: If you declare a variable with var or let but don't give it a value, JavaScript automatically assigns it the value of undefined.\
+
+```javascript
+let score; // Declaration
+console.log(score); // Output: undefined
+ ```
+2. Initialization
+
+ Initialization is the process of assigning an initial value to a variable for the first time. This is the moment you actually put something inside the "box" you created.
+
+Syntax: You use the assignment operator (=).
+
+```javascript 
+score = 100; // Initialization
+```
+
+
 
 ## 🔗 Comments
 
