@@ -15,7 +15,7 @@ const playerName = "Sam"; // We use const because the name stays the same
 currentScore = 10;  // Updating the score later in the game
 ```
 
-## 1.  Declaration And Initialization
+##  Declaration And Initialization
 
 1. Declaration 
 
@@ -37,7 +37,30 @@ Syntax: You use the assignment operator (=).
 score = 100; // Initialization
 ```
 
+## Variable hoisting
 
+Hoisting is a behavior in JavaScript where the engine moves declarations to the top of their containing scope (the script or the function) during the compilation phase, before the code actually runs.
+It’s important to remember that only the declarations are hoisted, not the initializations (the values you assign).
+
+1. Hoisting with var
+
+When you declare a variable with var, JavaScript "hoists" the name to the top and initializes it with the value undefined. This is why you can log a var variable before you've even written the line that defines it without the program crashing.
+
+console.log(greeting); // Output: undefined
+var greeting = "Hello!";
+console.log(greeting); // Output: "Hello!"
+
+2. Hoisting with let and const
+
+Variables declared with let and const are also hoisted, but with a major catch: they are not initialized. They exist in a state called the Temporal Dead Zone (TDZ) from the start of the block until the line where they are declared is reached.
+
+If you try to access them before the declaration, JavaScript throws a ReferenceError.
+
+sayHi(); // Output: "Hi there!"
+
+function sayHi() {
+  console.log("Hi there!");
+}
 
 ## 🔗 Comments
 
